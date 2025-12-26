@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 小兔鲜儿</title>
+    <link rel="icon" href="./实验1_图片/images/logo(1).png" type="image/png">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/profile.css">
+</head>
+<body>
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#">钟焕月_25216950310</a></li>
+                <li><a href="./index.html">返回首页</a></li>
+                <li><a href="./car.html">购物车</a></li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="./index.html">小兔鲜儿</a></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">浏览记录</a></li>
+                <li><a href="#">会员中心</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper profile-container">
+        <div class="profile-aside">
+            <div class="avatar-box">
+                <img src="./实验1_图片/exp/头像.png" alt="头像" class="avatar">
+                <h3 id="aside-username">--</h3>
+            </div>
+            <ul class="menu">
+                <li class="active"><a href="javascript:;">我的账户</a></li>
+                <li><a href="javascript:;">我的订单</a></li>
+                <li><a href="javascript:;">收货地址</a></li>
+                <li><a href="javascript:;" id="logout-btn" style="color:#cf4444;">退出登录</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+            <div class="panel info-panel">
+                <div class="panel-hd">
+                    <h3>个人信息</h3>
+                </div>
+                <div class="panel-bd">
+                    <div class="info-item">
+                        <label>用户名：</label>
+                        <span id="info-username">加载中...</span>
+                    </div>
+                    <div class="info-item">
+                        <label>绑定手机：</label>
+                        <span id="info-phone">--</span>
+                    </div>
+                    <div class="info-item">
+                        <label>会员等级：</label>
+                        <span class="vip-tag">普通会员</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel order-panel">
+                <div class="panel-hd">
+                    <h3>最近订单</h3>
+                </div>
+                <div class="panel-bd" id="order-list">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="bottom">
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/profile.js"></script>
+</body>
+</html>

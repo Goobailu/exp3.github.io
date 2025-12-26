@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册 - 小兔鲜儿</title>
+    <link rel="icon" href="./实验1_图片/images/logo(1).png" type="image/png">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/register.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="./index.html" class="logo">
+                    <img src="./实验1_图片/images/logo.png" alt="小兔鲜儿">
+                </a>
+                <div class="welcome-text">欢迎注册</div>
+            </div>
+            <div class="header-right">
+                <div class="have-account">
+                    已有账号？<a href="./login.html" class="login-link">去登录>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="steps-container">
+        <div class="steps">
+            <div class="step active">
+                <div class="step-number">1</div>
+                <div class="step-text">验证手机号</div>
+                <div class="step-line"></div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-text">填写账号信息</div>
+                <div class="step-line"></div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-text">注册成功</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="register-box">
+            <h2 class="form-title">验证手机号</h2>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label class="form-label">国家/地区</label>
+                    <div class="phone-input-group">
+                        <div class="country-code">
+                            <i class="fas fa-globe-asia"></i>
+                            <span>中国 +86</span>
+                        </div>
+                        <input type="tel" class="phone-input" id="phone" name="phone" placeholder="建议您用常用手机号">
+                    </div>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agreement" name="agreement">
+                    <label for="agreement">我已阅读并同意<a href="#"> 《用户注册协议隐私政策》 </a></label>
+                </div>
+                
+                <button type="button" class="btn btn-primary" id="verifyBtn">点击按钮进行验证</button>
+                
+                <p class="agreement">
+                    注册即代表您同意<a href="#">《您账户里遇到的数据确认通知》</a>，我们将通过<span id="phonePreview">****</span>发送验证码，请确保您的手机号畅通。
+                </p>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">帮助中心</a>
+            <a href="#">售后服务</a>
+            <a href="#">法律声明</a>
+            <a href="#">联系我们</a>
+            <a href="#">网站地图</a>
+        </div>
+        <div class="copyright">
+            钟焕月_25216950310<br>
+            CopyRight @ 小兔鲜儿 版权所有
+        </div>
+    </div>
+
+    <script src="./JS/crypto.js" defer></script>
+    <script src="./JS/register.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结算页 - 小兔鲜儿</title>
+    <link rel="icon" href="./实验1_图片/images/logo(1).png" type="image/png">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/buy.css">
+</head>
+<body>
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li><a href="./login.html" class="login-link">请先登录</a></li>
+                <li><a href="./index.html">返回首页</a></li>
+                <li><a href="./car.html">返回购物车</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="./index.html">小兔鲜儿</a></h1>
+        </div>
+        <div class="step-box">
+            <span>1.我的购物车</span>
+            <span class="active">2.填写核对订单信息</span>
+            <span>3.成功提交订单</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="checkout-box">
+            <h3 class="box-title">填写并核对订单信息</h3>
+            
+            <div class="box-body">
+                <h4 class="sub-title">收货人信息</h4>
+                <div class="address-container">
+                    <div class="address-item active">
+                        <div class="user-name">是我吖 <span class="tag">默认</span></div>
+                        <div class="user-tel">138****8888</div>
+                        <div class="user-addr">广东省 佛山市 南海区 北一路3号小兔鲜儿总部</div>
+                        <div class="action"><a href="javascript:;">修改</a></div>
+                    </div>
+                    <div class="address-item">
+                        <div class="user-name">钟焕月_25216950310</div>
+                        <div class="user-tel">156****6666</div>
+                        <div class="user-addr">广东省 佛山市 禅城区 佛山一中</div>
+                        <div class="action"><a href="javascript:;">修改</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-body">
+                <h4 class="sub-title">配送清单</h4>
+                <table class="goods-table">
+                    <thead>
+                        <tr>
+                            <th width="400">商品名称</th>
+                            <th>单价</th>
+                            <th>数量</th>
+                            <th>小计</th>
+                        </tr>
+                    </thead>
+                    <tbody id="buy-list">
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="box-footer">
+                <div class="order-total">
+                    <p>共 <span class="red" id="total-count">0</span> 件商品，总商品金额：<span class="price">¥<span id="total-price">0.00</span></span></p>
+                    <p>运费：<span class="price">¥0.00</span></p>
+                    <p class="pay-line">应付总额：<span class="pay-price">¥<span id="final-price">0.00</span></span></p>
+                </div>
+                <div class="submit-box">
+                    <button class="btn-submit" id="submit-order">提交订单并支付</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul>
+                    <li><img src="./实验1_图片/uploads/价格亲民.png" alt=""><span>价格亲民</span></li>
+                    <li><img src="./实验1_图片/uploads/物流快捷.png" alt=""><span>物流快捷</span></li>
+                    <li><img src="./实验1_图片/uploads/品质新鲜.png" alt=""><span>品质新鲜</span></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/auth.js"></script>
+    <script src="./JS/buy.js"></script>
+</body>
+</html>

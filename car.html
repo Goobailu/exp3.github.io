@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小兔鲜儿 - 购物车</title>
+    <link rel="icon" href="./实验1_图片/images/logo(1).png" type="image/png">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/car.css">
+</head>
+<body>
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#">钟焕月_25216950310</a></li>
+                <li><a href="./login.html" class="login-link">请先登录</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">会员中心</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">在线客服</a></li>
+                <li><a href="#"><span></span>手机版</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="./index.html">小兔鲜儿</a></h1>
+        </div>
+    </div>
+
+    <div class="cart wrapper">
+        <h3 class="xtx-cart-title">我的购物车</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th width="80"><input type="checkbox" class="check-all"> 全选</th>
+                    <th width="400">商品信息</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="cart-list">
+                </tbody>
+        </table>
+
+        <div class="action-bar">
+            <div class="select-all">
+                <input type="checkbox" class="check-all"> 全选
+                <div class="operation">
+                    <a href="javascript:;" class="del-select">删除选中的商品</a>
+                    <a href="javascript:;" class="clear-cart">清理购物车</a>
+                </div>
+            </div>
+            <div class="total">
+                <div class="amount">已选择 <span id="total-count">0</span> 件商品</div>
+                <div class="price">总价：<span id="total-price">¥0.00</span></div>
+                <div class="btn-buy" onclick="alert('跳转支付页面')">去结算</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul>
+                    <li><img src="./实验1_图片/uploads/价格亲民.png" alt=""><span>价格亲民</span></li>
+                    <li><img src="./实验1_图片/uploads/物流快捷.png" alt=""><span>物流快捷</span></li>
+                    <li><img src="./实验1_图片/uploads/品质新鲜.png" alt=""><span>品质新鲜</span></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="#">关于我们</a>|<a href="#">帮助中心</a>|<a href="#">售后服务</a>|
+                    <a href="#">配送与验收</a>|<a href="#">商务合作</a>|<a href="#">搜索推荐</a>|<a href="#">友情链接</a>
+                </p>
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/car.js"></script>
+    <script src="./JS/auth.js"></script>
+</body>
+</html>
