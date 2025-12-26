@@ -1,0 +1,164 @@
+/* CSS/buy.css */
+body {
+    background: #f5f5f5;
+}
+
+/* 顶部步骤条 */
+.header .step-box {
+    float: right;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+.header .step-box span {
+    margin-left: 30px;
+}
+.header .step-box span.active {
+    color: #27ba9b;
+    font-weight: bold;
+}
+
+/* 结算大盒子 */
+.checkout-box {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box-title {
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 20px;
+}
+.sub-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+.box-body {
+    margin-bottom: 30px;
+}
+
+/* 地址卡片 */
+.address-container {
+    display: flex;
+    gap: 20px;
+}
+.address-item {
+    width: 280px;
+    height: 140px;
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.address-item.active {
+    border-color: #27ba9b;
+    background: #fdfdfd;
+}
+.address-item .user-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.address-item .tag {
+    font-size: 12px;
+    background: #999;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+.address-item.active .tag {
+    background: #27ba9b;
+}
+.address-item .user-tel, 
+.address-item .user-addr {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.address-item .action {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.address-item .action a {
+    color: #27ba9b;
+    font-size: 12px;
+}
+
+/* 商品表格 */
+.goods-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.goods-table th {
+    background: #f5f5f5;
+    height: 40px;
+    font-weight: normal;
+    color: #999;
+}
+.goods-table td {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px;
+    text-align: center;
+}
+.goods-table .info {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.goods-table .info img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: 1px solid #eee;
+}
+
+/* 底部结算 */
+.box-footer {
+    border-top: 1px solid #f5f5f5;
+    padding-top: 20px;
+    text-align: right;
+}
+.order-total p {
+    line-height: 2;
+    color: #666;
+}
+.order-total .red {
+    color: #cf4444;
+}
+.order-total .price {
+    color: #cf4444;
+    width: 100px;
+    display: inline-block;
+}
+.order-total .pay-line {
+    margin-top: 10px;
+}
+.order-total .pay-price {
+    font-size: 24px;
+    color: #cf4444;
+    font-weight: bold;
+}
+.submit-box {
+    margin-top: 20px;
+}
+.btn-submit {
+    width: 180px;
+    height: 50px;
+    background: #27ba9b;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-submit:hover {
+    background: #1daf90;
+}

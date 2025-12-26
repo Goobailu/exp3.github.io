@@ -1,0 +1,255 @@
+.wrapper {
+    width: 1240px;
+    margin: 0 auto
+}
+
+.shortcut {
+    height: 52px;
+    background-color: #333
+}
+
+.shortcut .wrapper {
+    height: 52px
+}
+
+.shortcut .wrapper ul {
+    float: right
+}
+
+.shortcut .wrapper li {
+    float: left;
+    line-height: 52px
+}
+
+.shortcut .wrapper li:last-child a {
+    border-right: 0
+}
+
+.shortcut .wrapper li a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc
+}
+
+.shortcut .wrapper li a span {
+    display: inline-block;
+    margin-right: 2px;
+    width: 15px;
+    height: 16px;
+    background-image: url(../实验1_图片/uploads/手机.png);
+    background-position: -160px 0px;
+    vertical-align: middle
+}
+
+.header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 70px;
+}
+
+.header .logo {
+    float: left;
+    margin-right: 40px;
+    width: 207px;
+    height: 70px
+}
+
+.header .logo h1 {
+    width: 207px;
+    height: 70px;
+    font-size: 0
+}
+
+.header .logo h1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130%;
+    background-image: url(../实验1_图片/exp/logo.png);
+    background-size: contain;
+}
+.header .nav {
+    float: left;
+    padding-top: 8px;
+}
+
+.header .nav li {
+    float: left;
+    margin-right: 48px
+}
+
+.header .nav ul li a {
+    line-height: 70px;
+    padding-bottom: 7px;
+}
+
+.header .nav ul li a:hover {
+    color: #27ba9b;
+    text-decoration: underline;
+     text-underline-offset: 7px;
+     text-decoration-thickness: 1px; 
+}
+
+.header .search {
+    position: relative;
+    float: left;
+    margin-top: 28px;
+    margin-left: 0px;
+    width: 210px;
+    height: 30px;
+    border-bottom: 1px solid #e7e7e7
+}
+
+
+.header .search input::-moz-placeholder {
+    color: #ccc
+}
+
+.header .search input::placeholder {
+    color: #ccc
+}
+
+.header .search span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../实验1_图片/uploads/搜索.png);
+}
+
+/* 搜索按钮置入输入框右侧（绝对定位），保证不超出 search 区域 */
+.header .search {
+    position: relative; /* 保持相对定位，便于按钮绝对定位 */
+    box-sizing: border-box;
+}
+.header .search input {
+    width: 215px;
+    height: 28px;
+    padding-left: 30px;
+    padding-right: 48px; /* 为右侧按钮留出空间 */
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+}
+.header .search .search-btn {
+    position: absolute;
+    right: 0; /* 贴紧搜索区域右侧 */
+    top: 0; /* 置顶 */
+    height: 100%;
+    padding: 0 10px;
+    background: #27ba9b;
+    color: #fff;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    font-size: 13px;
+    line-height: 28px;
+    cursor: pointer;
+    max-width: 70px; /* 控制按钮宽度，避免超出搜索区域 */
+}
+.header .search .search-btn:active,
+.header .search .search-btn:focus {
+    outline: none;
+}
+
+.header .car {
+    position: relative;
+    float: right;
+    margin: 28px 15px
+}
+
+.header .car a {
+    display: inline-grid;
+    width: 24px;
+    height: 24px;
+    background-image: url(../实验1_图片/uploads/购物车1.png);
+}
+
+.header .car span {
+    position: absolute;
+    right: -12px;
+    top: -5px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 13px;
+    color: #fff
+}
+.footer {
+    height: 342px;
+    background-color: #333
+}
+
+.footer .wrapper {
+    width: 1393px
+}
+
+.footer .wrapper .top {
+    padding-top: 59px;
+    padding-left: 135px;
+    height: 175px;
+    border-bottom: 3px solid #434343
+}
+
+.footer .wrapper .top li {
+    position: relative;
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+    line-height: 58px
+}
+.footer .wrapper .top li img
+{
+    filter: grayscale(100%) brightness(100);
+}
+
+.footer .wrapper .top li span {
+    margin-left:15px;
+    font-style: 28px;
+    color: #fff
+}
+
+.footer .wrapper .top li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+}
+
+.footer .wrapper .top li:nth-child(2)::before {
+    background-position: -131px 0
+}
+
+.footer .wrapper .top li:last-child {
+    margin-right: 0
+}
+
+.footer .wrapper .top li:last-child::before {
+    background-position: -65px 0
+}
+
+.footer .wrapper .bottom {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #999
+}
+
+.footer .wrapper .bottom a {
+    font-size: 14px;
+    color: #999
+}
+
+.footer .wrapper .bottom p {
+    margin-bottom: 20px
+}
